@@ -15,9 +15,9 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@github.com:tryber/acc-csharp-0x-project-trybe-games.git`.
+  - Use o comando: `git clone git@github.com:tryber/acc-csharp-011-project-trybe-games.git`.
   - Entre na pasta do repositório que você acabou de clonar:
-    - `cd acc-csharp-0x-project-trybe-games`
+    - `cd acc-csharp-011-project-trybe-games`
 
   2. Instale as dependências
   
@@ -53,7 +53,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
 
   6. Crie um novo `Pull Request` _(PR)_
 
-  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/acc-csharp-0x-project-trybe-games/pulls).
+  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/acc-csharp-011-project-trybe-games/pulls).
   - Clique no botão verde _"New pull request"_.
   - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**.
   - Coloque um título para a sua _Pull Request_.
@@ -61,7 +61,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
   - Clique no botão verde _"Create pull request"_.
   - Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_.
   - **Não se preocupe em preencher mais nada por enquanto!**.
-  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/acc-csharp-0x-project-trybe-games/pulls) e confira que o seu _Pull Request_ está criado.
+  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/acc-csharp-011-project-trybe-games/pulls) e confira que o seu _Pull Request_ está criado.
 
 </details>
 
