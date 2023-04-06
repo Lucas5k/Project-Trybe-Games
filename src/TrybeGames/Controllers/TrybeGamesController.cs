@@ -88,7 +88,6 @@ public class TrybeGamesController
             Console.WriteLine("Ainda não é possível realizar essa funcionalidade!");
             return;
         }
-
     }
 
     public void QueryGamesBoughtByPlayer()
@@ -117,7 +116,17 @@ public class TrybeGamesController
     public void AddPlayer()
     {
         // implementar
-        Console.WriteLine("Ainda não é possível realizar essa funcionalidade!");
+        var addNewPlayer = Console.ReadLine();
+        int idNewPlayer = 1;
+
+        for (int i = 0; i < database.Players.Count; i++)
+        {
+            if (this.database.Players[i].Id == idNewPlayer)
+            {
+                idNewPlayer++;
+            }
+        }
+        this.database.Players.Add(new Player() { Id = idNewPlayer, Name = addNewPlayer });
     }
 
     public void AddGameStudio()

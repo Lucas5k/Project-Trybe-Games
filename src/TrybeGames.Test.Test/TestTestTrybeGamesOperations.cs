@@ -10,6 +10,7 @@ namespace TrybeGames.Test.Test;
 [Collection("Sequential")]
 public class TestTestTrybeGames
 {
+    [Trait("type", "unit")]
     [Trait("Category", "1 - Adicionar uma nova pessoa jogadora ao banco de dados.")]
     [Theory(DisplayName = "Deve testar se AddPlayer adiciona uma pessoa jogadora corretamente ao banco de dados.")]
     [MemberData(nameof(DataTestTestAddPlayer))]
@@ -25,7 +26,6 @@ public class TestTestTrybeGames
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 
