@@ -59,7 +59,6 @@ public class TestTestTrybeGames
 }
 public class TestTestTrybeGames2
 {
-    [Trait("type", "unit")]
     [Trait("Category", "2 - Adicionar novo Estúdio de Jogos ao banco de dados.")]
     [Theory(DisplayName = "Deve testar se AddGameStudio adiciona um estúdio de jogos corretamente ao banco de dados.")]
     [MemberData(nameof(DataTestTestAddGameStudio))]
@@ -75,7 +74,6 @@ public class TestTestTrybeGames2
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 
@@ -110,6 +108,7 @@ public class TestTestTrybeGames2
 }
 public class TestTestTrybeGames3
 {
+    [Trait("type", "unit")]
     [Trait("Category", "3 - Adicionar novo Jogo ao Banco de dados.")]
     [Theory(DisplayName = "Deve testar se AddGame adiciona um jogo corretamente ao banco de dados.")]
     [MemberData(nameof(DataTestTestAddGame))]
@@ -125,7 +124,6 @@ public class TestTestTrybeGames3
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 

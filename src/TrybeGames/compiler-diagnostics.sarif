@@ -117,9 +117,9 @@
               "resultFile": {
                 "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Controllers/TrybeGamesController.cs",
                 "region": {
-                  "startLine": 196,
+                  "startLine": 217,
                   "startColumn": 16,
-                  "endLine": 196,
+                  "endLine": 217,
                   "endColumn": 61
                 }
               }
@@ -138,9 +138,9 @@
               "resultFile": {
                 "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Controllers/TrybeGamesController.cs",
                 "region": {
-                  "startLine": 204,
+                  "startLine": 225,
                   "startColumn": 16,
-                  "endLine": 204,
+                  "endLine": 225,
                   "endColumn": 57
                 }
               }
@@ -159,31 +159,10 @@
               "resultFile": {
                 "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Controllers/TrybeGamesController.cs",
                 "region": {
-                  "startLine": 212,
+                  "startLine": 233,
                   "startColumn": 16,
-                  "endLine": 212,
+                  "endLine": 233,
                   "endColumn": 71
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1050",
-          "level": "note",
-          "message": "Declare types in namespaces",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Helpers/ConsoleWrapper.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 14,
-                  "endLine": 1,
-                  "endColumn": 28
                 }
               }
             }
@@ -205,6 +184,27 @@
                   "startColumn": 18,
                   "endLine": 1,
                   "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Declare types in namespaces",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Helpers/ConsoleWrapper.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 14,
+                  "endLine": 1,
+                  "endColumn": 28
                 }
               }
             }

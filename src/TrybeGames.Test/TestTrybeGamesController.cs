@@ -66,13 +66,6 @@ public class TestTrybeGamesController
     [MemberData(nameof(DataTestTestAddGame))]
     public void TestTestAddGame(string name, string date, string gameType, Game expected)
     {
-        throw new NotImplementedException();
-
-        // Arrange
-
-        // Act
-
-        // Assert
     }
 
     public static TheoryData<string, string, string, Game> DataTestTestAddGame => new TheoryData<string, string, string, Game>
