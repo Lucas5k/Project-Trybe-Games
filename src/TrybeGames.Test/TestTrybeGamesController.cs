@@ -66,6 +66,19 @@ public class TestTrybeGamesController
     [MemberData(nameof(DataTestTestAddGame))]
     public void TestTestAddGame(string name, string date, string gameType, Game expected)
     {
+        // Arrange
+        var mockConsole = new Mock<IConsole>();
+
+        mockConsole.SetupSequence(c => c.ReadLine()).Returns(name).Returns(date).Returns(gameType);
+
+        var database = new TrybeGamesDatabase();
+        var controller = new TrybeGamesController(database, mockConsole.Object);
+
+        // Act
+        controller.AddGame();
+
+        // Assert
+        controller.database.Games[0].Should().BeEquivalentTo(expected);
     }
 
     public static TheoryData<string, string, string, Game> DataTestTestAddGame => new TheoryData<string, string, string, Game>
