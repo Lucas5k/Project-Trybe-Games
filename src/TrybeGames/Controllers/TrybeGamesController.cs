@@ -116,7 +116,7 @@ public class TrybeGamesController
     public void AddPlayer()
     {
         // implementar
-        var addNewPlayer = Console.ReadLine();
+        string addNewPlayer = Console.ReadLine();
         int idNewPlayer = 1;
 
         for (int i = 0; i < database.Players.Count; i++)
@@ -132,7 +132,17 @@ public class TrybeGamesController
     public void AddGameStudio()
     {
         // implementar
-        Console.WriteLine("Ainda não é possível realizar essa funcionalidade!");
+        string addNewGameStudio = Console.ReadLine();
+        int idNewGameStudio = 1;
+
+        for (int i = 0; i < database.GameStudios.Count; i++)
+        {
+            if (this.database.GameStudios[i].Id == idNewGameStudio)
+            {
+                idNewGameStudio++;
+            }
+        }
+        this.database.GameStudios.Add(new GameStudio() { Id = idNewGameStudio, Name = addNewGameStudio });
     }
 
     public void AddGame()

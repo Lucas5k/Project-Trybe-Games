@@ -40,13 +40,18 @@ public class TestTrybeGamesController
     [MemberData(nameof(DataTestTestAddGameStudio))]
     public void TestTestAddGameStudio(string name, GameStudio expected)
     {
-        throw new NotImplementedException();
-
         // Arrange
+        var mockConsole = new Mock<IConsole>();
+
+        mockConsole.Setup(c => c.ReadLine()).Returns(name);
+        var database = new TrybeGamesDatabase();
+        var controller = new TrybeGamesController(database, mockConsole.Object);
 
         // Act
+        controller.AddGameStudio();
 
         // Assert
+        controller.database.GameStudios[0].Should().BeEquivalentTo(expected);
     }
 
     public static TheoryData<string, GameStudio> DataTestTestAddGameStudio => new TheoryData<string, GameStudio>

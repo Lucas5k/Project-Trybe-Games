@@ -10,7 +10,6 @@ namespace TrybeGames.Test.Test;
 [Collection("Sequential")]
 public class TestTestTrybeGames
 {
-    [Trait("type", "unit")]
     [Trait("Category", "1 - Adicionar uma nova pessoa jogadora ao banco de dados.")]
     [Theory(DisplayName = "Deve testar se AddPlayer adiciona uma pessoa jogadora corretamente ao banco de dados.")]
     [MemberData(nameof(DataTestTestAddPlayer))]
@@ -60,6 +59,7 @@ public class TestTestTrybeGames
 }
 public class TestTestTrybeGames2
 {
+    [Trait("type", "unit")]
     [Trait("Category", "2 - Adicionar novo Estúdio de Jogos ao banco de dados.")]
     [Theory(DisplayName = "Deve testar se AddGameStudio adiciona um estúdio de jogos corretamente ao banco de dados.")]
     [MemberData(nameof(DataTestTestAddGameStudio))]
