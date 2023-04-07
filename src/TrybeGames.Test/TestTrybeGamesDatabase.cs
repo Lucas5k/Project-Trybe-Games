@@ -77,7 +77,17 @@ public class TestTrybeGamesDatabase
     [MemberData(nameof(DataTestGetGamesOwnedBy))]
     public void TestGetGamesOwnedBy(TrybeGamesDatabase databaseEntry, int playerIdEntry, List<Game> expected)
     {
+        // Arrange
+        var instance = new TrybeGamesDatabase();
+        Player id = new();
 
+        // Act
+        instance.Games = (List<Game>) databaseEntry.Games;
+        id.Id = playerIdEntry;
+        var result = instance.GetGamesOwnedBy(id);
+
+        // Assert
+        result.Should().BeEquivalentTo(expected);
     }
 
     public static TheoryData<TrybeGamesDatabase, int, List<Game>> DataTestGetGamesOwnedBy => new TheoryData<TrybeGamesDatabase, int, List<Game>>
