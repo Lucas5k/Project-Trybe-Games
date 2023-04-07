@@ -129,17 +129,11 @@ public class TestTrybeGamesDatabase
         }
     };
 
+    [Trait("type", "unit")]
     [Theory(DisplayName = "Deve testar se GetGamesDevelopedBy retorna jogos desenvolvidos pelo estúdio corretamente.")]
     [MemberData(nameof(DataTestGetGamesDevelopedBy))]
     public void TestGetGamesDevelopedBy(TrybeGamesDatabase databaseEntry, int gameStudioIdEntry, List<Game> expected)
     {
-        throw new NotImplementedException();
-
-        // Arrange
-        
-        // Act
-        
-        // Assert
     }
 
     public static TheoryData<TrybeGamesDatabase, int, List<Game>> DataTestGetGamesDevelopedBy => new TheoryData<TrybeGamesDatabase, int, List<Game>>

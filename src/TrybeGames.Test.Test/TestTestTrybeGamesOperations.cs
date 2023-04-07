@@ -108,7 +108,6 @@ public class TestTestTrybeGames2
 }
 public class TestTestTrybeGames3
 {
-    [Trait("type", "unit")]
     [Trait("Category", "3 - Adicionar novo Jogo ao Banco de dados.")]
     [Theory(DisplayName = "Deve testar se AddGame adiciona um jogo corretamente ao banco de dados.")]
     [MemberData(nameof(DataTestTestAddGame))]

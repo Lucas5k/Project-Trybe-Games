@@ -1,3 +1,4 @@
+using System.Linq;
 namespace TrybeGames;
 
 public class TrybeGamesDatabase
@@ -11,7 +12,10 @@ public class TrybeGamesDatabase
     public List<Game> GetGamesDevelopedBy(GameStudio gameStudio)
     {
         // implementar
-        throw new NotImplementedException();
+        var findAllGames = from game in Games
+                                where game.DeveloperStudio == gameStudio.Id
+                                select game;
+        return (List<Game>)findAllGames;
     }
 
     public List<Game> GetGamesPlayedBy(Player player)

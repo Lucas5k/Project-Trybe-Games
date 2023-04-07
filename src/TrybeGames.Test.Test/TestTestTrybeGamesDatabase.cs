@@ -21,7 +21,6 @@ public class TestTestTrybeGamesDatabase
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
     public static TheoryData<TrybeGamesDatabase, int, List<Game>, bool> DataTestGetGamesPlayedBy => new ()
@@ -89,7 +88,6 @@ public class TestTestTrybeGamesDatabase2
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 
@@ -143,6 +141,7 @@ public class TestTestTrybeGamesDatabase2
 }
 public class TestTestTrybeGamesDatabase3
 {
+    [Trait("type", "unit")]
     [Trait("Category", "4 - Buscar jogos desenvolvidos por um estúdio de jogos.")]
     [Theory(DisplayName = "Deve testar se TestGetGamesDevelopedBy testa corretamente a função GetGamesDevelopedBy.")]
     [MemberData(nameof(DataTestGetGamesDevelopedBy))]
@@ -158,7 +157,6 @@ public class TestTestTrybeGamesDatabase3
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 
