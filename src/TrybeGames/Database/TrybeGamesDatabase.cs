@@ -30,6 +30,9 @@ public class TrybeGamesDatabase
     public List<Game> GetGamesOwnedBy(Player playerEntry)
     {
         // Implementar
-        throw new NotImplementedException();
+        var findAllGetGamesOwned = from game in Games
+                                        where playerEntry.GamesOwned.Contains(game.Id)
+                                        select game;
+        return (List<Game>) findAllGetGamesOwned;
     }
 }

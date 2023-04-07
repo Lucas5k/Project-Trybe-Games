@@ -141,7 +141,6 @@ public class TestTestTrybeGamesDatabase2
 }
 public class TestTestTrybeGamesDatabase3
 {
-    [Trait("type", "unit")]
     [Trait("Category", "4 - Buscar jogos desenvolvidos por um estúdio de jogos.")]
     [Theory(DisplayName = "Deve testar se TestGetGamesDevelopedBy testa corretamente a função GetGamesDevelopedBy.")]
     [MemberData(nameof(DataTestGetGamesDevelopedBy))]

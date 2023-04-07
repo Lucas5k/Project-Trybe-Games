@@ -178,12 +178,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Helpers/ConsoleWrapper.cs",
+                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Contracts/IConsole.cs",
                 "region": {
                   "startLine": 1,
-                  "startColumn": 14,
+                  "startColumn": 18,
                   "endLine": 1,
-                  "endColumn": 28
+                  "endColumn": 26
                 }
               }
             }
@@ -199,12 +199,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Contracts/IConsole.cs",
+                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-trybe-games/src/TrybeGames/Helpers/ConsoleWrapper.cs",
                 "region": {
                   "startLine": 1,
-                  "startColumn": 18,
+                  "startColumn": 14,
                   "endLine": 1,
-                  "endColumn": 26
+                  "endColumn": 28
                 }
               }
             }

@@ -77,13 +77,7 @@ public class TestTrybeGamesDatabase
     [MemberData(nameof(DataTestGetGamesOwnedBy))]
     public void TestGetGamesOwnedBy(TrybeGamesDatabase databaseEntry, int playerIdEntry, List<Game> expected)
     {
-        throw new NotImplementedException();
 
-        // Arrange
-        
-        // Act
-        
-        // Assert
     }
 
     public static TheoryData<TrybeGamesDatabase, int, List<Game>> DataTestGetGamesOwnedBy => new TheoryData<TrybeGamesDatabase, int, List<Game>>
