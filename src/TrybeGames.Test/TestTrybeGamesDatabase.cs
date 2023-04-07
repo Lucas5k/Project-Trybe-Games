@@ -134,6 +134,17 @@ public class TestTrybeGamesDatabase
     [MemberData(nameof(DataTestGetGamesDevelopedBy))]
     public void TestGetGamesDevelopedBy(TrybeGamesDatabase databaseEntry, int gameStudioIdEntry, List<Game> expected)
     {
+        // Arrange
+        var instance = new TrybeGamesDatabase();
+        GameStudio id = new();
+
+        // Act
+        instance.Games = (List<Game>) databaseEntry.Games;
+        id.Id = gameStudioIdEntry;
+        var result = instance.GetGamesDevelopedBy(id);
+
+        // Assert
+        result.Should().BeEquivalentTo(expected);
     }
 
     public static TheoryData<TrybeGamesDatabase, int, List<Game>> DataTestGetGamesDevelopedBy => new TheoryData<TrybeGamesDatabase, int, List<Game>>
