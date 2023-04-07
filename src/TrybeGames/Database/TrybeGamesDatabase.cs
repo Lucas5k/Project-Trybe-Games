@@ -12,16 +12,19 @@ public class TrybeGamesDatabase
     public List<Game> GetGamesDevelopedBy(GameStudio gameStudio)
     {
         // implementar
-        var findAllGames = from game in Games
+        var findAllGamesDeveloped = from game in Games
                                 where game.DeveloperStudio == gameStudio.Id
                                 select game;
-        return (List<Game>)findAllGames;
+        return (List<Game>) findAllGamesDeveloped;
     }
 
     public List<Game> GetGamesPlayedBy(Player player)
     {
         // Implementar
-        throw new NotImplementedException();
+        var findAllGamesPlayed = from game in Games
+                                      where game.Players.Contains(player.Id)
+                                      select game;
+        return (List<Game>) findAllGamesPlayed;
     }
 
     public List<Game> GetGamesOwnedBy(Player playerEntry)
