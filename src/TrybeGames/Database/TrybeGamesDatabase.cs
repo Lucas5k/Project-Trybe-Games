@@ -15,7 +15,7 @@ public class TrybeGamesDatabase
         var findAllGamesDeveloped = from game in Games
                                 where game.DeveloperStudio == gameStudio.Id
                                 select game;
-        return (List<Game>) findAllGamesDeveloped;
+        return (List<Game>) findAllGamesDeveloped.ToList();
     }
 
     public List<Game> GetGamesPlayedBy(Player player)
@@ -24,15 +24,16 @@ public class TrybeGamesDatabase
         var findAllGamesPlayed = from game in Games
                                       where game.Players.Contains(player.Id)
                                       select game;
-        return (List<Game>) findAllGamesPlayed;
+        return (List<Game>) findAllGamesPlayed.ToList();
     }
 
     public List<Game> GetGamesOwnedBy(Player playerEntry)
     {
         // Implementar
         var findAllGetGamesOwned = from game in Games
-                                        where playerEntry.GamesOwned.Contains(game.Id)
-                                        select game;
-        return (List<Game>) findAllGetGamesOwned;
+                            where game.Players.Contains(playerEntry.Id)
+                            select game;
+
+        return (List<Game>) findAllGetGamesOwned.ToList();
     }
 }
