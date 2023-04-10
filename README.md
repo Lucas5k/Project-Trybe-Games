@@ -1,9 +1,13 @@
-# Project-Calendar-Event
+# Project-Trybe-Games
 
 ## :memo: Descrição
-<p>O Project-Calendar-Event é um sistema de gestão de tempo, um sistema de calendário para organização dos eventos do dia.
-Nesse projeto reforcei alguns conceitos como Herança, interface e muito mais!! E por último mais não menos importante, realizei testes usando o Xunit com
-o framework FluentAssertion.
+<p>O Project-Trybe-Games é um sistema para gerenciar e armazenar dados de jogos jogados por Pessoas.
+Nesse projeto utilizei meus conhecimentos em LINQS e realizei testes usando o Xunit com o framework FluentAssertion.
+<br>
+<br>
+(OBSERVAÇÂO):
+O projeto foi disponibilizado pela Trybe.
+Nesse nesse caminho src/TrybeGames/Controllers/TrybeGamesController.cs, eu somente implementei os seguintes metodos: AddPlayer(), AddGameStudio(), AddGame().
 </p>
 
 ## :books: Funcionalidades
