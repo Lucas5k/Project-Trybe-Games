@@ -35,7 +35,7 @@ cd Project-Trybe-Games
 - Usar o projeto
 cd src/
 
-- Rodar os testes, somente no arquivo que contenha o .TEST
+- Rodar os testes, somente no arquivo que contenha ao final .TEST
 dotnet test
 
 Use a vontade!
