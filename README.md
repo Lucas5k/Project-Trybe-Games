@@ -27,15 +27,15 @@ Nesse caminho src/TrybeGames/Database/TrybeGamesDatabase.cs todos os metodos imp
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 ```
 - Clone o repositório
-git clone git@github.com:Lucas5k/Project-Calendar-Event.git
+git clone git@github.com:Lucas5k/Project-Trybe-Games.git
 
 - Entre no arquivo do projeto
-cd Project-Calendar-Event
+cd Project-Trybe-Games
 
 - Usar o projeto
 cd src/
 
-- Rodar os testes
+- Rodar os testes, somente no arquivo que contenha o .TEST
 dotnet test
 
 Use a vontade!
