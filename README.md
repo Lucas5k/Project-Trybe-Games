@@ -6,14 +6,19 @@ Nesse projeto utilizei meus conhecimentos em LINQS e realizei testes usando o Xu
 <br>
 <br>
 (OBSERVAÇÂO):
+<br>
+ <br>
 O projeto foi disponibilizado pela Trybe.
-Nesse nesse caminho src/TrybeGames/Controllers/TrybeGamesController.cs, eu somente implementei os seguintes metodos: AddPlayer(), AddGameStudio(), AddGame().
+Nesse caminho src/TrybeGames/Controllers/TrybeGamesController.cs, eu somente implementei os seguintes metodos: AddPlayer(), AddGameStudio(), AddGame().
+<br>
+ <br>
+Nesse caminho src/TrybeGames/Database/TrybeGamesDatabase.cs todos os metodos implementado por mim.
 </p>
 
 ## :books: Funcionalidades
-<ol><b>Funcionalidade 1</b>: Receber uma data e atrasar a data do evento.</ol>
-<ol><b>Funcionalidade 2</b>: Retornar uma mensagem com o titulo do evento e a data, caso o formato seja normal.</ol>
-<ol><b>Funcionalidade 3</b>: Retornar uma mensagem com o titulo do evento a data e a descrição, caso o formato seja detalhado.</ol>
+<ol><b>Funcionalidade 1</b>: Adicionar um jogador.</ol>
+<ol><b>Funcionalidade 2</b>: Adicionar um jogo.</ol>
+<ol><b>Funcionalidade 3</b>: Adicionar um novo estudio.</ol>
 
 ## <h3>:wrench: Tecnologias utilizadas</h3>
 * C# Sharp
